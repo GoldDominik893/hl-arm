@@ -1,16 +1,21 @@
-MIT License
+Dominic Wajda v1 LICENCE
 
 Copyright (c) 2026 Dominik Wajda
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+The work in this repository is the work of Dominic Wajda, and is automatically protected by copyright law.
+
+You are permitted to: view the code, and to run the code, modify the code for your own use.
+
+YOU ARE NOT PERMITTED TO: distribute this code, sublicense this code, sell this code, publish this code, modify this code to be used in production software.
+
+"production software", means software which the output can be accessible from a live, operational environment.
+
+I RESERVE THE RIGHT TO CHANGE THE CONDITIONS OF THIS LICENCE FOR FUTURE ITERATIONS OF THE SOFTWARE.
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
+
+The Licence includes a clause from the MIT Licence:
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
