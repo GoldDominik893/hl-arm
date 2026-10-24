@@ -1,4 +1,4 @@
-Dominic Wajda v1 LICENCE
+Dominic Wajda v1.1 LICENCE
 
 Copyright (c) 2026 Dominik Wajda
 
@@ -6,7 +6,7 @@ The work in this repository is the work of Dominic Wajda, and is automatically p
 
 You are permitted to: view the code, and to run the code, modify the code for your own use.
 
-YOU ARE NOT PERMITTED TO: distribute this code, sublicense this code, sell this code, publish this code, modify this code to be used in production software.
+YOU ARE NOT PERMITTED TO: distribute this code, sublicense this code, sell this code, publish this code, modify this code to be used in production software, use this code for training AI models.
 
 "production software", means software which the output can be accessible from a live, operational environment.
 
