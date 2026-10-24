@@ -16,7 +16,9 @@ variables: $variablename
 array: $arrayname[numberofpositions]
 
 arrays start at: 0
+
 setting a variable or array position: =
+
 comparison of values: ==, !=, >, <
 
 basic arithmetic operations: a*b, a-b, a+b, a/b
