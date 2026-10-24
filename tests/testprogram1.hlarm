@@ -1,0 +1,21 @@
+// this is a test program for HLARM, to test my compiler
+
+$firstnum = integer(5);
+$secondnum = integer(10);
+
+$sum = integer(($firstnum + $secondnum));
+
+// random comment which should be filtered
+
+echo(string(please enter a number to compare));
+$comparisonvalue = input(integer());
+
+if ($sum < $comparisonvalue) {
+    echo(string(your number is larger than that the stored sum));
+}
+
+if ($sum > $comparisonvalue) {
+    echo(string(your number is smaller than that the stored sum));
+}
+
+halt();
