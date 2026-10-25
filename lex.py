@@ -33,16 +33,14 @@ currentposition = 0
 temp_variablename = ""
 
 while thereisstilltokens:
-    print("there are still tokens to be found")
+    print("position: ", currentposition)
 
 ## searching for a variable declaration
 
     currentchar = nocommentshlarmvar[currentposition]
 
     if currentchar == "$":
-        tokentable.append({
-            "type": "VARIABLE"
-        })
+        tokentable.append({})
         
         currentposition = currentposition + 1
         currentchar = nocommentshlarmvar[currentposition]
@@ -50,11 +48,16 @@ while thereisstilltokens:
         while currentchar != " ":
             temp_variablename = temp_variablename + currentchar
             currentposition = currentposition + 1
+            currentchar = nocommentshlarmvar[currentposition]
             
         tokentable[currenttoken] = {
+            "type": "VARIABLE",
             "value": temp_variablename
         }
         currenttoken = currenttoken + 1
+        temp_variablename = ""
+    else:
+        currentposition = currentposition + 1
 
     if len(nocommentshlarmvar) == currentposition:
         thereisstilltokens = False
