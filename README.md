@@ -19,11 +19,11 @@ arrays start at: 0
 
 setting a variable or array position: =
 
-comparison of values: ==, !=, >, <
+comparison of values: ==, !=, >, <, >=. <=
 
 basic arithmetic operations: a*b, a-b, a+b, a/b
 
-defining of strings or other data types anywhere in the program: string(), boolean(), integer(),
+defining of strings or other data types anywhere in the program: str(), boo(), int(),
 
 the outputs will be: echo(), return().
 
@@ -46,3 +46,5 @@ halt() ends the execution of the program, similar to the php exit() command.
 ## progress
 
 I am currently building the lexer part of the compiler.
+
+in my testing, i am using the /tests/ folder, the versioning i am using is where the first number dictates the version of the code, the second number dictates the generation attempt by the program. For example "testprogram1.1.hlarmtok", means program 1, 1st attempt of generating tokens, testprogram1.1.s means program 1, 1st attempt of converting into arm assembly code.
