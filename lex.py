@@ -35,10 +35,11 @@ temp_variablename = ""
 while thereisstilltokens:
     print("position: ", currentposition)
 
-## searching for a variable declaration
 
     currentchar = nocommentshlarmvar[currentposition]
 
+    ## searching for a variable declaration ($)
+    
     if currentchar == "$":
         tokentable.append({})
         
@@ -56,8 +57,89 @@ while thereisstilltokens:
         }
         currenttoken = currenttoken + 1
         temp_variablename = ""
+      
+      
+        
+    ## searching for an assignment or comparison operator (= and ==)   
+        
+    elif currentchar == "=":
+        tokentable.append({})
+        
+        if nocommentshlarmvar[currentposition + 1] == "=":
+            tokentable[currenttoken] = {
+                        "type": "COMPARISON",
+                        "value": "=="
+            }
+        
+        tokentable[currenttoken] = {
+            "type": "ASSIGNMENT",
+            "value": "="
+        }
+        currenttoken = currenttoken + 1
+        currentposition = currentposition + 1
+    
+    ## searching for a comparison operator (>, >=)
+    
+    elif currentchar == ">":
+        tokentable.append({})
+        
+        if nocommentshlarmvar[currentposition + 1] == "=":
+            tokentable[currenttoken] = {
+                        "type": "COMPARISON",
+                        "value": ">="
+            }
+        
+        tokentable[currenttoken] = {
+            "type": "COMPARISON",
+            "value": ">"
+        }
+        currenttoken = currenttoken + 1
+        currentposition = currentposition + 1    
+    
+    
+    ## searching for a comparison operator (<, >=)
+    
+    elif currentchar == "<":
+        tokentable.append({})
+        
+        if nocommentshlarmvar[currentposition + 1] == "=":
+            tokentable[currenttoken] = {
+                        "type": "COMPARISON",
+                        "value": "<="
+            }
+        
+        tokentable[currenttoken] = {
+            "type": "COMPARISON",
+            "value": "<"
+        }
+        currenttoken = currenttoken + 1
+        currentposition = currentposition + 1       
+    
+    
+    
+    
+    
+    
+    ## searching for end of instruction (;)
+    
+    elif currentchar == ";":
+        tokentable.append({})
+        
+        tokentable[currenttoken] = {
+            "type": "END",
+            "value": ";"
+        }
+        currenttoken = currenttoken + 1
+        currentposition = currentposition + 1     
+    
+    
+    
     else:
         currentposition = currentposition + 1
+
+
+
+
 
     if len(nocommentshlarmvar) == currentposition:
         thereisstilltokens = False
