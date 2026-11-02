@@ -248,7 +248,7 @@ while thereisstilltokens:
         currenttoken = currenttoken + 1
         currentposition = currentposition + 6
         
-    ## search for a built in function call (echo(), input(), if(), loopif(), loop())
+    ## search for a built in function call (echo(), return(), input(), if(), loopif(), loop())
 
     elif currentchar == "e" and nocommentshlarmvar[currentposition + 1] == "c" and nocommentshlarmvar[currentposition + 2] == "h" and nocommentshlarmvar[currentposition + 3] == "o" and nocommentshlarmvar[currentposition + 4] == "(":
         tokentable.append({})
@@ -260,7 +260,7 @@ while thereisstilltokens:
         currenttoken = currenttoken + 1
         currentposition = currentposition + 5
 
-    elif currentchar == "i" and nocommentshlarmvar[currentposition + 1] == "n" and nocommentshlarmvar[currentposition + 2] == "p" and nocommentshlarmvar[currentposition + 3] == "u" and nocommentshlarmvar[currentposition + 4] == "t" and nocommentshlarmvar[currentposition + 5] == "(" and nocommentshlarmvar[currentposition + 6] == ")":
+    elif currentchar == "i" and nocommentshlarmvar[currentposition + 1] == "n" and nocommentshlarmvar[currentposition + 2] == "p" and nocommentshlarmvar[currentposition + 3] == "u" and nocommentshlarmvar[currentposition + 4] == "t" and nocommentshlarmvar[currentposition + 5] == "(":
         tokentable.append({})
 
         tokentable[currenttoken] = {
@@ -268,7 +268,7 @@ while thereisstilltokens:
             "value": "input"
         }
         currenttoken = currenttoken + 1
-        currentposition = currentposition + 7
+        currentposition = currentposition + 6
     
     
     elif currentchar == "i" and nocommentshlarmvar[currentposition + 1] == "f" and nocommentshlarmvar[currentposition + 2] == "(":
@@ -301,8 +301,18 @@ while thereisstilltokens:
         currenttoken = currenttoken + 1
         currentposition = currentposition + 5
     
+    elif currentchar == "r" and nocommentshlarmvar[currentposition + 1] == "e" and nocommentshlarmvar[currentposition + 2] == "t" and nocommentshlarmvar[currentposition + 3] == "u" and nocommentshlarmvar[currentposition + 4] == "r" and nocommentshlarmvar[currentposition + 5] == "n" and nocommentshlarmvar[currentposition + 6] == "(":
+        tokentable.append({})
+
+        tokentable[currenttoken] = {
+            "type": "FUNCTION_BASE",
+            "value": "return"
+        }
+        currenttoken = currenttoken + 1
+        currentposition = currentposition + 7
     
-    ## opening and closing of code definitions ({, })
+    
+    ## searching for opening and closing of code definitions ({, })
     
     elif currentchar == "{":
         tokentable.append({})
