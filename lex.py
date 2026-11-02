@@ -395,3 +395,4 @@ while thereisstilltokens:
         thereisstilltokens = False
 
 print(*tokentable, sep="\n")
+#### source for sep command python: https://www.pythonpool.com/sep-in-python/
