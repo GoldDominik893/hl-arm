@@ -1,41 +1,43 @@
-{'type': 'VARIABLE', 'value': 'firstnum'}
-{'type': 'ASSIGNMENT', 'value': '='}
-{'type': 'DATA_INTEGER', 'value': '5'}
+[
+{'type': 'VARIABLE', 'value': 'firstnum'},
+{'type': 'ASSIGNMENT', 'value': '='},
+{'type': 'DATA_INTEGER', 'value': '5'},
+{'type': 'END', 'value': ';'},
+{'type': 'VARIABLE', 'value': 'secondnum'},
+{'type': 'ASSIGNMENT', 'value': '='},
+{'type': 'DATA_INTEGER', 'value': '10'},
+{'type': 'END', 'value': ';'},
+{'type': 'VARIABLE', 'value': 'sum'},
+{'type': 'ASSIGNMENT', 'value': '='},
+{'type': 'START_DATA_INTEGER', 'value': None},
+{'type': 'VARIABLE', 'value': 'firstnum'},
+{'type': 'ARITHMETIC', 'value': '+'},
+{'type': 'VARIABLE', 'value': 'secondnum'},
+{'type': 'END', 'value': ';'},
+{'type': 'FUNCTION_BASE', 'value': 'echo'},
+{'type': 'DATA_STRING', 'value': 'please enter a number to compare'},
+{'type': 'END', 'value': ';'},
+{'type': 'VARIABLE', 'value': 'comparisonvalue'},
+{'type': 'ASSIGNMENT', 'value': '='},
+{'type': 'FUNCTION_BASE', 'value': 'input'},
+{'type': 'DATA_INTEGER', 'value': ''},
+{'type': 'END', 'value': ';'},
+{'type': 'VARIABLE', 'value': 'sum'},
+{'type': 'COMPARISON', 'value': '<'},
+{'type': 'VARIABLE', 'value': 'comparisonvalue'},
+{'type': 'CODE_OPEN', 'value': '{'},
+{'type': 'FUNCTION_BASE', 'value': 'echo'},
+{'type': 'DATA_STRING', 'value': 'your number is larger than that the stored sum'},
+{'type': 'END', 'value': ';'},
+{'type': 'CODE_CLOSE', 'value': '}'},
+{'type': 'VARIABLE', 'value': 'sum'},
+{'type': 'COMPARISON', 'value': '>'},
+{'type': 'VARIABLE', 'value': 'comparisonvalue'},
+{'type': 'CODE_OPEN', 'value': '{'},
+{'type': 'FUNCTION_BASE', 'value': 'echo'},
+{'type': 'DATA_STRING', 'value': 'your number is smaller than that the stored sum'},
+{'type': 'END', 'value': ';'},
+{'type': 'CODE_CLOSE', 'value': '}'},
+{'type': 'HALT', 'value': 'halt'},
 {'type': 'END', 'value': ';'}
-{'type': 'VARIABLE', 'value': 'secondnum'}
-{'type': 'ASSIGNMENT', 'value': '='}
-{'type': 'DATA_INTEGER', 'value': '10'}
-{'type': 'END', 'value': ';'}
-{'type': 'VARIABLE', 'value': 'sum'}
-{'type': 'ASSIGNMENT', 'value': '='}
-{'type': 'START_DATA_INTEGER', 'value': None}
-{'type': 'VARIABLE', 'value': 'firstnum'}
-{'type': 'ARITHMETIC', 'value': '+'}
-{'type': 'VARIABLE', 'value': 'secondnum'}
-{'type': 'END', 'value': ';'}
-{'type': 'FUNCTION_BASE', 'value': 'echo'}
-{'type': 'DATA_STRING', 'value': 'please enter a number to compare'}
-{'type': 'END', 'value': ';'}
-{'type': 'VARIABLE', 'value': 'comparisonvalue'}
-{'type': 'ASSIGNMENT', 'value': '='}
-{'type': 'FUNCTION_BASE', 'value': 'input'}
-{'type': 'DATA_INTEGER', 'value': ''}
-{'type': 'END', 'value': ';'}
-{'type': 'VARIABLE', 'value': 'sum'}
-{'type': 'COMPARISON', 'value': '<'}
-{'type': 'VARIABLE', 'value': 'comparisonvalue'}
-{'type': 'CODE_OPEN', 'value': '{'}
-{'type': 'FUNCTION_BASE', 'value': 'echo'}
-{'type': 'DATA_STRING', 'value': 'your number is larger than that the stored sum'}
-{'type': 'END', 'value': ';'}
-{'type': 'CODE_CLOSE', 'value': '}'}
-{'type': 'VARIABLE', 'value': 'sum'}
-{'type': 'COMPARISON', 'value': '>'}
-{'type': 'VARIABLE', 'value': 'comparisonvalue'}
-{'type': 'CODE_OPEN', 'value': '{'}
-{'type': 'FUNCTION_BASE', 'value': 'echo'}
-{'type': 'DATA_STRING', 'value': 'your number is smaller than that the stored sum'}
-{'type': 'END', 'value': ';'}
-{'type': 'CODE_CLOSE', 'value': '}'}
-{'type': 'HALT', 'value': 'halt'}
-{'type': 'END', 'value': ';'}
+]
