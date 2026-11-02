@@ -394,4 +394,4 @@ while thereisstilltokens:
     if len(nocommentshlarmvar) == currentposition:
         thereisstilltokens = False
 
-print(tokentable)
+print(*tokentable, sep="\n")
