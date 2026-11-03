@@ -394,5 +394,9 @@ while thereisstilltokens:
     if len(nocommentshlarmvar) == currentposition:
         thereisstilltokens = False
 
-print(*tokentable, sep="\n")
+
+print("[")
+print(*tokentable, sep=",\n")
+print("]")
+
 #### source for sep command python: https://www.pythonpool.com/sep-in-python/
